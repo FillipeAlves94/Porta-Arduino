@@ -89,14 +89,14 @@ Você pode instalar diretamente pelo **Gerenciador de Bibliotecas** da Arduino I
   <tr>
     <td align="center">
       <a href="https://github.com/ValterBeff">
-        <img src="https://avatars.githubusercontent.com/u/ValterBeff" width="100px;" alt="Valter Beff"/><br />
+        <img src="https://github.com/ValterBeff.png" width="100px;" alt="Foto de Valter Beff"/><br />
         <sub><b>Valter Beff</b></sub>
       </a><br />
       Desenvolvedor
     </td>
     <td align="center">
       <a href="https://github.com/FillipeAlves94">
-        <img src="https://avatars.githubusercontent.com/u/FillipeAlves94" width="100px;" alt="Fillipe Alves"/><br />
+        <img src="https://github.com/FillipeAlves94.png" width="100px;" alt="Foto de Fillipe Alves"/><br />
         <sub><b>Fillipe Alves</b></sub>
       </a><br />
       Desenvolvedor
