@@ -14,11 +14,12 @@
 
 // Variáveis globais de tempo
 int horas, minutos, segundos;
-int abrePorta = 90; // posição 90º - Aberto
-int fechaPorta = 0; // posição  0º - Fechado
+int abrePorta = 90;      // posição 90º - Aberto
+int fechaPorta = 0;      // posição  0º - Fechado
+int duracaoAbreto = 6000 // Duração da Porta Aberta - 6s
 
-// Senha
-String senhaCorreta = "0000";
+    // Senha
+    String senhaCorreta = "0000";
 String senhaDigitada = "";
 
 LiquidCrystal_I2C lcd(0x27, 16, 2); // LCD I2C
@@ -130,8 +131,8 @@ void alertaAcerto()
   }
 
   servo_9.write(abrePorta);
-  delay(6000);
-  servo_9.write(fechaPorta); // Fecha a porta automaticamente após 6s
+  delay(duracaoAbreto);
+  servo_9.write(fechaPorta); // A porta irá durar deacordo com a Variavel "duracaoAbreto"
 }
 
 // Buzzer Errado
