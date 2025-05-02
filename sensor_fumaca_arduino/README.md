@@ -1,6 +1,6 @@
 # 🔥 Sensor de Fumaça com Arduino
 
-Projeto de um sistema de alarme com detecção de fumaça/gás utilizando o sensor **MQ2**. Ao detectar a presença de fumaça ou gases inflamáveis, o sistema emite **alertas visuais (LEDs)** e **sonoros (buzzer)**, servindo como um aviso preventivo para ambientes domésticos, escolares ou laboratoriais.
+Projeto de um sistema de alarme com detecção de fumaça/gás utilizando o sensor **MQ2**. Ao detectar a presença de fumaça ou gases inflamáveis, o sistema emite **alertas visuais (LEDs)** e **sonoros (buzzer)**, servindo como aviso preventivo em ambientes domésticos, escolares ou laboratoriais. Além disso, LEDs vermelhos são utilizados para indicar a direção de saída ou rota segura.
 
 ---
 
@@ -8,8 +8,8 @@ Projeto de um sistema de alarme com detecção de fumaça/gás utilizando o sens
 
 - Detecção de fumaça/gás inflamável com o sensor MQ2
 - Alerta sonoro com buzzer
-- LED verde indica estado normal
-- LED vermelho e buzzer são ativados em caso de detecção
+- LED amarelo acende junto com o buzzer para indicar alerta de risco
+- LED vermelho indica caminho seguro ou saída de emergência
 - Sistema simples, ideal para projetos educacionais e protótipos
 
 ---
@@ -20,12 +20,13 @@ Projeto de um sistema de alarme com detecção de fumaça/gás utilizando o sens
 |--------------------|------------|
 | Arduino UNO        | 1          |
 | Sensor de Gás MQ2  | 1          |
-| LED Vermelho       | 1          |
-| LED Verde          | 1          |
+| LED Vermelho       | 5          |
+| LED Amarelo        | 2          |
 | Buzzer (ativo)     | 1          |
-| Resistores 220Ω    | 2          |
+| Botão              | 1          |
+| Resistores 220Ω    | 9          |
 | Protoboard         | 1          |
-| Jumpers            | diversos   |
+| Jumpers            | Diversos   |
 
 ---
 
@@ -34,9 +35,9 @@ Projeto de um sistema de alarme com detecção de fumaça/gás utilizando o sens
 - **MQ2**:  
   - VCC → 5V  
   - GND → GND  
-  - AOUT (A0) → A5
+  - AOUT → A0
 
-- **LED Verde**: D11
+- **LED Amarelo**: D11  
 - **LED Vermelho**: D12  
 - **Buzzer**: D10
 
@@ -55,11 +56,12 @@ Nenhuma biblioteca externa é necessária. O código usa apenas funções nativa
 1. Monte o circuito conforme o esquema de ligação.
 2. Conecte o Arduino ao computador via USB.
 3. Carregue o código `sensor_fumaca.ino` para o Arduino usando a IDE.
-4. Após ligado:
-   - LED verde acende, indicando estado normal.
-   - Se fumaça/gás for detectado:
-     - LED vermelho acende
-     - Buzzer emite som de alerta
+4. Após energizar o sistema:
+   - O sistema entra em estado de monitoramento.
+   - Se o sensor detectar fumaça ou gás:
+     - O LED amarelo acende
+     - O buzzer emite som de alerta
+   - Os LEDs vermelhos permanecem acesos para indicar rotas seguras de saída.
 
 ---
 
