@@ -5,17 +5,17 @@
 #include <Servo.h>
 
 // Definições de pinos e notas
-#define greenLedPin 10 // D10 Pino Arduino Digital
-#define redLedPin 11   // D11 Pino Arduino Digital
-#define buzzerPin 12   // D12 Pino Arduino Digital
+#define greenLedPin 11 // D11 Pino Arduino Digital
+#define redLedPin 12   // D12 Pino Arduino Digital
+#define buzzerPin 13   // D13 Pino Arduino Digital
 
 #define NOTE_1 1000 // 1000 Hz
 #define NOTE_2 400  //  400 Hz
 
 // Variáveis globais de tempo
 int horas, minutos, segundos;
-int abrePorta = 90; // posição 90º - Aberto
-int fechaPorta = 0; // posição  0º - Fechado
+int abrePorta = 0; // posição 0º - Aberto
+int fechaPorta = 90; // posição  90º - Fechado
 int duracao = 6;    // Duração da Porta Aberta em Segudos (valor * 1000).
 
 // Senha
@@ -27,6 +27,7 @@ LiquidCrystal_I2C lcd(0x27, 16, 2); // LCD I2C
 // Configuração do Keypad
 const byte LINHAS = 4;
 const byte COLUNAS = 3;
+
 char KEYS[LINHAS][COLUNAS] = {
     {'1', '2', '3'},
     {'4', '5', '6'},
@@ -40,9 +41,16 @@ Keypad keypad = Keypad(makeKeymap(KEYS), pino_linha, pino_coluna, LINHAS, COLUNA
 
 Servo servo_9; // D9 (Pino Arduino Pino Digital)
 
-void setup()
-{
-  Serial.begin(9600);
+void setup(){
+
+  pinMode(greenLedPin, OUTPUT);
+  pinMode(redLedPin, OUTPUT);
+  pinMode(buzzerPin, OUTPUT);
+
+  digitalWrite(greenLedPin, LOW);
+  digitalWrite(redLedPin, LOW);
+
+
   lcd.init();
   lcd.backlight();
   lcd.setCursor(0, 0);
@@ -51,25 +59,17 @@ void setup()
 
   servo_9.attach(9);
   servo_9.write(fechaPorta);
-
-  pinMode(greenLedPin, OUTPUT);
-  pinMode(redLedPin, OUTPUT);
-  pinMode(buzzerPin, OUTPUT);
-
-  digitalWrite(greenLedPin, LOW);
-  digitalWrite(redLedPin, LOW);
+  Serial.begin(9600);
 }
 
-void loop()
-{
-  char key = keypad.getKey();
-
+void loop(){
   // Atualiza o tempo atual
   unsigned long tempo = millis();
   horas = (tempo / 3600000) % 24;
   minutos = (tempo / 60000) % 60;
   segundos = (tempo / 1000) % 60;
 
+  char key = keypad.getKey();
   if (key)
   {
     // Acesso Liberado
@@ -117,9 +117,9 @@ void loop()
   }
 }
 
+
 // Buzzer Acerto
-void alertaAcerto()
-{
+void alertaAcerto(){
   for (int i = 0; i < 3; i++)
   {
     tone(buzzerPin, NOTE_1);
@@ -134,10 +134,8 @@ void alertaAcerto()
   delay(duracao * 1000);
   servo_9.write(fechaPorta); // A porta irá durar deacordo com a Variavel "duracao"
 }
-
 // Buzzer Errado
-void alertaError()
-{
+void alertaError(){
   for (int i = 0; i < 2; i++)
   {
     tone(buzzerPin, NOTE_2);
@@ -150,8 +148,7 @@ void alertaError()
 }
 
 // Enviar hora para o Python - Acesso Liberado
-void logLiberado()
-{
+void logLiberado(){
   Serial.print("Acesso Liberado às: ");
   Serial.print(horas);
   Serial.print(":");
@@ -161,8 +158,7 @@ void logLiberado()
 }
 
 // Enviar hora para o Python - Acesso Negado
-void logNegado()
-{
+void logNegado(){
   Serial.print("Acesso Negado às: ");
   Serial.print(horas);
   Serial.print(":");
