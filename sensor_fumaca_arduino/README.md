@@ -35,11 +35,12 @@ Projeto de um sistema de alarme com detecção de fumaça/gás utilizando o sens
 - **MQ2**:  
   - VCC → 5V  
   - GND → GND  
-  - AOUT → A0
+  - AOUT → A5
 
-- **LED Amarelo**: D11  
-- **LED Vermelho**: D12  
-- **Buzzer**: D10
+- **Button**: A0
+- **Buzzer**: D13
+- **LED Amarelo**: D12 - D11  
+- **LED Vermelho**: D10 - D9 - D8 - D7 - D6  
 
 > 📌 Os pinos podem ser alterados conforme o seu código. Certifique-se de manter consistência entre o circuito e o sketch Arduino.
 
