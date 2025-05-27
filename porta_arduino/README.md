@@ -94,17 +94,6 @@ Você pode instalar diretamente pelo **Gerenciador de Bibliotecas** da Arduino I
       </a><br />
       Desenvolvedor
     </td>
-    ## 🧠 Colaboradores
-
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/ValterBeff">
-        <img src="https://github.com/ValterBeff.png" width="100px;" alt="Foto de Valter Beff"/><br />
-        <sub><b>Valter Beff</b></sub>
-      </a><br />
-      Desenvolvedor
-    </td>
     <td align="center">
       <a href="https://github.com/diegoalbuquerquevj">
         <img src="https://github.com/diegoalbuquerquevj.png" width="100px;" alt="Foto de Diego Albuquerque"/><br />
