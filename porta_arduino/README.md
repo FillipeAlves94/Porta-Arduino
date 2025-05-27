@@ -99,13 +99,6 @@ Você pode instalar diretamente pelo **Gerenciador de Bibliotecas** da Arduino I
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/FillipeAlves94">
-        <img src="https://github.com/FillipeAlves94.png" width="100px;" alt="Foto de Fillipe Alves"/><br />
-        <sub><b>Fillipe Alves</b></sub>
-      </a><br />
-      Desenvolvedor
-    </td>
-    <td align="center">
       <a href="https://github.com/ValterBeff">
         <img src="https://github.com/ValterBeff.png" width="100px;" alt="Foto de Valter Beff"/><br />
         <sub><b>Valter Beff</b></sub>
@@ -117,7 +110,7 @@ Você pode instalar diretamente pelo **Gerenciador de Bibliotecas** da Arduino I
         <img src="https://github.com/diegoalbuquerquevj.png" width="100px;" alt="Foto de Diego Albuquerque"/><br />
         <sub><b>Diego Albuquerque</b></sub>
       </a><br />
-      Desenvolvedor/Infraestrutura
+      Infraestrutura
     </td>
   </tr>
 </table>
