@@ -34,7 +34,6 @@ Este repositório reúne dois projetos desenvolvidos com Arduino para fins educa
         <img src="https://github.com/diegoalbuquerquevj.png" width="100px;" alt="Foto de Diego Albuquerque"/><br />
         <sub><b>Diego Albuquerque</b></sub>
       </a><br />
-      Desenvolvedor
       Infraestrutura
     </td>
   </tr>
