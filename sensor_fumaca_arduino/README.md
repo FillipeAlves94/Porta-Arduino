@@ -88,12 +88,5 @@ Nenhuma biblioteca externa é necessária. O código usa apenas funções nativa
       </a><br />
       Desenvolvedor
     </td>
-    <td align="center">
-      <a href="https://github.com/ValterBeff">
-        <img src="https://github.com/ValterBeff.png" width="100px;" alt="Foto de Valter Beff"/><br />
-        <sub><b>Valter Beff</b></sub>
-      </a><br />
-      Desenvolvedor
-    </td>
   </tr>
 </table>
