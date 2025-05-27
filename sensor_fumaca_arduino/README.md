@@ -88,5 +88,12 @@ Nenhuma biblioteca externa é necessária. O código usa apenas funções nativa
       </a><br />
       Desenvolvedor
     </td>
+    <td align="center">
+      <a href="https://github.com/Ramoninfo">
+        <img src="https://github.com/Ramoninfo.png" width="100px;" alt="Foto de Ramon Santos"/><br />
+        <sub><b>Ramon Santos</b></sub>
+      </a><br />
+      Analista de Projetos
+    </td>
   </tr>
 </table>
