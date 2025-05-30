@@ -1,4 +1,4 @@
-# 🔐 Porta de Segurança com Arduino
+# 🔐 Protótipo de uma porta automatizada com Arduino com abertura por Senha
 
 Projeto de uma porta de segurança com teclado matricial e verificação de senha. Quando a senha correta é digitada, o sistema permite a abertura da porta por 6 segundos, sinalizando com LED verde e som. Se a senha estiver incorreta, o sistema alerta com LED vermelho e som.
 
