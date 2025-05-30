@@ -37,9 +37,23 @@ Este repositório reúne dois projetos desenvolvidos com Arduino para fins educa
       Infraestrutura
     </td>
     <td align="center">
+      <a href="https://github.com/gabriel30r">
+        <img src="https://github.com/gabriel30r.png" width="100px;" alt="Foto de Gabriel Quintanilha"/><br />
+        <sub><b>Gabriel Quintanilha</b></sub>
+      </a><br />
+      Infraestrutura
+    </td>
+    <td align="center">
       <a href="https://github.com/Ramoninfo">
         <img src="https://github.com/Ramoninfo.png" width="100px;" alt="Foto de Ramon Santos"/><br />
         <sub><b>Ramon Santos</b></sub>
+      </a><br />
+      Analista de Projetos
+    </td>
+    <td align="center">
+      <a href="https://github.com/JeanWallace01">
+        <img src="https://github.com/JeanWallace01.png" width="100px;" alt="Foto de Jean Wallace"/><br />
+        <sub><b>Jean Wallace</b></sub>
       </a><br />
       Analista de Projetos
     </td>
