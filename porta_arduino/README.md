@@ -101,6 +101,13 @@ Você pode instalar diretamente pelo **Gerenciador de Bibliotecas** da Arduino I
       </a><br />
       Infraestrutura
     </td>
+    <td align="center">
+      <a href="https://github.com/JeanWallace01">
+        <img src="https://github.com/JeanWallace01.png" width="100px;" alt="Foto de Jean Wallace"/><br />
+        <sub><b>Jean Wallace</b></sub>
+      </a><br />
+      Analista de Projetos
+    </td>
   </tr>
 </table>
 
