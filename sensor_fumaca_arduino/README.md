@@ -1,4 +1,4 @@
-# 🔥 Sensor de Fumaça com Arduino
+# 🔥 A implementação de um modelo com indicações automatizadas para detectar presença de fumaça e vazamento de gás
 
 Projeto de um sistema de alarme com detecção de fumaça/gás utilizando o sensor **MQ2**. Ao detectar a presença de fumaça ou gases inflamáveis, o sistema emite **alertas visuais (LEDs)** e **sonoros (buzzer)**, servindo como aviso preventivo em ambientes domésticos, escolares ou laboratoriais. Além disso, LEDs vermelhos são utilizados para indicar a direção de saída ou rota segura.
 
