@@ -89,6 +89,13 @@ Nenhuma biblioteca externa é necessária. O código usa apenas funções nativa
       Desenvolvedor
     </td>
     <td align="center">
+      <a href="https://github.com/gabriel30r">
+        <img src="https://github.com/gabriel30r.png" width="100px;" alt="Foto de Gabriel Quintanilha"/><br />
+        <sub><b>Gabriel Quintanilha</b></sub>
+      </a><br />
+      Infraestrutura
+    </td>
+    <td align="center">
       <a href="https://github.com/Ramoninfo">
         <img src="https://github.com/Ramoninfo.png" width="100px;" alt="Foto de Ramon Santos"/><br />
         <sub><b>Ramon Santos</b></sub>
